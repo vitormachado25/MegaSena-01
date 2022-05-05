@@ -26,7 +26,7 @@ namespace MegaSena_01
 
 
             Random numbers = new Random();
-            int numbersDrawn1 = numbers.Next(0, 60);
+            int numbersDrawn1 = numbers.Next(0, 1);
             int numbersDrawn2 = numbers.Next(0, 60);
             int numbersDrawn3 = numbers.Next(0, 60);
             int numbersDrawn4 = numbers.Next(0, 60);
@@ -72,6 +72,19 @@ namespace MegaSena_01
 
                 }
             }
+            Console.WriteLine();
+            Console.WriteLine();
+
+            if ((numbersTyping1 == numbersDrawn1) || (numbersTyping1 == numbersDrawn2) || (numbersTyping1 == numbersDrawn3))
+            {
+                Console.WriteLine("Você acertou um número!");
+            }
+
+            if((numbersTyping1 == numbersDrawn4 ) || (numbersTyping1 == numbersDrawn5) || (numbersTyping1 == numbersDrawn6))
+            {
+                
+            }
+
         }
     }
 } 
